@@ -1,0 +1,18 @@
+ /* Оформление элемента с классом news-list */
+        .news-list {
+            display: flex;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        /* Оформление каждого элемента li внутри элемента с классом news-list */
+       .news-list li {
+            margin: 10px;
+            padding: 0;
+            width: calc(25% - 20px)
+       }
+        body {
+            background-image: url(https://i.pinimg.com/originals/d9/cf/38/d9cf3856acfbf743bc678d0c24280984.jpg);
+            background-size: cover;
+        }

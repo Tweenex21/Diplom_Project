@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+    <nav>
+        <ul class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            <li class="breadcrumb-item active">Контакты</li>
+        </ul>
+    </nav>
+    <div class="px-4 mb-5 text-center border-bottom">
+        <h1 class="display-4 fw-bold text-body-emphasis">Контакты</h1>
+    </div>
+
+<h2 class="mb-4">Главный редактор</h2>
+<dl class="row">
+  <dt class="col-sm-1">ФИО:</dt>
+  <dd class="col-sm-11">Третьяков А.Б.</dd>
+  <dt class="col-sm-1">Телефон:</dt>
+  <dd class="col-sm-11">+7999-999-99-99</dd>
+  <dt class="col-sm-1">Email:</dt>
+  <dd class="col-sm-11">Tweenex@mail.ru</dd>
+</dl>
+{% endblock %}

@@ -1,15 +1,17 @@
 from django.db import models
+from taggit.managers import TaggableManager
 
 # Create your models here.
 
 
 class News(models.Model):
     title = models.CharField(max_length=100)
-    text = models.TextField()
     short_text = models.TextField()
-    image = models.CharField(max_length=170)
+    text = models.TextField()
+    image = models.ImageField(default="", upload_to='static/image')
     author = models.CharField(max_length=40)
-    date = models.DateTimeField()
+    date = models.DateTimeField(auto_now_add=True)
+    tags = TaggableManager(blank=True)
 
     def __str__(self):
         return self.title

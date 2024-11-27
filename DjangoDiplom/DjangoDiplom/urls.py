@@ -22,4 +22,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
     path('news/<int:id>', news),
+    path('tags/<str:slug>', tags),
+    path('search', search),
+    path('contacts/', contact, name='contact'),
 ]

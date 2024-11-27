@@ -12,4 +12,7 @@ python manage.py runserver
 
 - Написать 6-7 новостей
 - Посмотреть курс https://htmlacademy.ru/courses
-- 
+- Разобраться с блоками в шаблонах (templates)
+
+pip freeze > requirements.txt
+

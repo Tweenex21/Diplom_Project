@@ -1,37 +1,32 @@
 {% extends 'base.html' %}
 
-{% block title %}Главная страница{% endblock %}
-{% block extra_css %}
-    <style>
-       .header {color: #ff8100 !important;}
-    </style>
-{% endblock %}
+{% block title %}Новости по запросу: {{ q }}{% endblock %}
 
 {% block content %}
-    <div class="px-4 mb-5 text-center border-bottom">
-        <h1 class="display-4 fw-bold text-body-emphasis header">Лента новостей</h1>
-    </div>
-    <ul class="news-list mb-4">
-        {% for item in page_obj %}
+    <div class="header" style="text-align: center;"><h1>{{ q }}</h1></div>
+    {% if not news %}
+        <p>По вашему запросу ничего не найдено</p>
+    {% else %}
+    <ul class="news-list">
+        {% for item in news %}
         <li>
-            <div class="card">
+            <div class="card" style="width: 18rem;">
                 <img src="{{ item.image.url }}" class="card-img-top">
                 <div class="card-body">
                     <h5 class="card-title">{{ item.title }}</h5>
                     <p class="card-text">{{ item.short_text }}</p>
-                    <a href="/news/{{ item.id }}" class="btn btn-success">Перейти к новости</a>
+                    <a href="/news/{{ item.id }}" class="btn btn-primary">Перейти к новости</a>
                 </div>
             </div>
         </li>
         {% endfor %}
     </ul>
-
 <div class="pagination d-flex justify-content-center">
         <nav aria-label="Page navigation">
             <ul class="pagination">
-                {% if page_obj.has_previous %}
+                {% if news.has_previous %}
                     <li class="page-item">
-                        <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
+                        <a class="page-link" href="?page={{ news.previous_page_number }}" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                         </a>
                     </li>
@@ -43,17 +38,17 @@
                     </li>
                 {% endif %}
 
-                {% for page_num in page_obj.paginator.page_range %}
-                    {% if page_obj.number == page_num %}
+                {% for page_num in news.paginator.page_range %}
+                    {% if news.number == page_num %}
                         <li class="page-item active"><span class="page-link">{{ page_num }}</span></li>
                     {% else %}
                         <li class="page-item"><a class="page-link" href="?page={{ page_num }}">{{ page_num }}</a></li>
                     {% endif %}
                 {% endfor %}
 
-                {% if page_obj.has_next %}
+                {% if news.has_next %}
                     <li class="page-item">
-                        <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
+                        <a class="page-link" href="?page={{ news.next_page_number }}" aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                         </a>
                     </li>
@@ -67,5 +62,6 @@
             </ul>
         </nav>
     </div>
+    {% endif%}
 {% endblock %}
 
