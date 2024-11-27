@@ -4,42 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/app/migrations/0004_alter_news_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/app/migrations/0005_alter_news_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/app/migrations/0006_alter_news_date_alter_news_image.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/app/migrations/0007_alter_news_date.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/app/migrations/0008_news_tags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/12_Ee45JCU.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/12_KOzBkfN.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/13.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/14.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/16.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/17.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/18.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/image/19.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/static/list.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/tags.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/app/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/templates/news.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/templates/news.html" afterDir="false" />
-    </list>
+    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="Проект диплома новостей" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,7 +93,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732222203123</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Проект диплома новостей">
+      <option name="closed" value="true" />
+      <created>1732737305584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732737305584</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +123,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="Проект диплома новостей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проект диплома новостей" />
   </component>
 </project>
