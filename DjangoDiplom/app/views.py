@@ -1,10 +1,53 @@
-from django.db.models.functions import Upper
 from django.core.paginator import Paginator
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from taggit.models import Tag
+from .forms import UserRegisterForm
+from django.contrib.auth import authenticate, login
+from django.contrib.auth.forms import AuthenticationForm
 from .models import *
 
 # Create your views here.
+
+
+def sign_up(request):
+    if request.method == 'POST':
+        form = UserRegisterForm(request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            age = form.cleaned_data.get('age')
+
+            # Проверка на существование пользователя
+            if User.objects.filter(username=username).exists():
+                form.add_error('username', 'Пользователь с таким именем уже существует.')
+                return render(request, 'registration_page.html', {'form': form})
+
+            # Проверка возраста
+            if age < 18:
+                form.add_error('age', 'Вы должны быть старше 18 лет.')
+                return render(request, 'registration_page.html', {'form': form})
+
+            # Сохранение пользователя и профиля
+            user = form.save()
+            profile = Profile.objects.create(user=user, age=age)
+            return redirect('index')
+    else:
+        form = UserRegisterForm()
+    return render(request, 'registration_page.html', {'form': form})
+
+
+def user_login(request):
+    if request.method == 'POST':
+        form = AuthenticationForm(request, data=request.POST)
+        if form.is_valid():
+            username = form.cleaned_data.get('username')
+            password = form.cleaned_data.get('password')
+            user = authenticate(username=username, password=password)
+            if user is not None:
+                login(request, user)
+                return redirect('index')
+    else:
+        form = AuthenticationForm()
+    return render(request, 'login.html', {'form': form})
 
 
 def index(request):

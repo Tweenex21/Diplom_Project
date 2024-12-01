@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="Проект диплома новостей" />
+    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="Проект диплома новостей - Readme">
+      <change afterPath="$PROJECT_DIR$/DjangoDiplom/app/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/registration_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDiplom/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDiplom/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDiplom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDiplom/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DjangoDiplom/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/templates/tags.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +24,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -20,6 +32,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Tweenex21&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Tweenex21/Diplom_Project.git&quot;,
+    &quot;accountId&quot;: &quot;bffa7e06-5cf8-4e16-923d-dacba79dfb4b&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -35,10 +59,13 @@
     &quot;Python.RunDiplom.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Tweenex/PycharmProjects/Diplom/pythonProject/DjangoDiplom&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Tweenex/PycharmProjects/Diplom/pythonProject&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Tweenex\PycharmProjects\Diplom\pythonProject" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Tweenex\PycharmProjects\Diplom\pythonProject\DjangoDiplom\static\image" />
       <recent name="C:\Tweenex\PycharmProjects\Diplom\pythonProject\DjangoDiplom\templates" />
@@ -101,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732737305584</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Проект диплома новостей - Readme">
+      <option name="closed" value="true" />
+      <created>1732737562642</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732737562642</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -124,6 +159,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
     <MESSAGE value="Проект диплома новостей" />
-    <option name="LAST_COMMIT_MESSAGE" value="Проект диплома новостей" />
+    <MESSAGE value="Проект диплома новостей - Readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проект диплома новостей - Readme" />
   </component>
 </project>

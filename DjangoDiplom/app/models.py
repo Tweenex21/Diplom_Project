@@ -1,5 +1,7 @@
 from django.db import models
 from taggit.managers import TaggableManager
+from django.contrib.auth.models import User
+
 
 # Create your models here.
 
@@ -17,3 +19,9 @@ class News(models.Model):
         return self.title
 
 
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    age = models.PositiveIntegerField()
+
+    def __str__(self):
+        return self.user.username
