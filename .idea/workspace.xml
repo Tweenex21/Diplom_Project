@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="Проект диплома новостей - Readme">
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/app/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DjangoDiplom/templates/registration_page.html" afterDir="false" />
+    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="Проект диплома новостей - Добавление регистрации пользователя и вход">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/DjangoDiplom/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/app/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DjangoDiplom/templates/tags.html" beforeDir="false" afterPath="$PROJECT_DIR$/DjangoDiplom/templates/tags.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +128,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732737562642</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Проект диплома новостей - Добавление регистрации пользователя и вход">
+      <option name="closed" value="true" />
+      <created>1733055294458</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1733055294459</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Проект диплома новостей - Добавление регистрации пользователя и вход">
+      <option name="closed" value="true" />
+      <created>1733055305577</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733055305577</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,6 +168,7 @@
     <MESSAGE value="initial" />
     <MESSAGE value="Проект диплома новостей" />
     <MESSAGE value="Проект диплома новостей - Readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="Проект диплома новостей - Readme" />
+    <MESSAGE value="Проект диплома новостей - Добавление регистрации пользователя и вход" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проект диплома новостей - Добавление регистрации пользователя и вход" />
   </component>
 </project>
