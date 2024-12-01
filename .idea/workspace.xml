@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="Проект диплома новостей - Добавление регистрации пользователя и вход">
+    <list default="true" id="fa6c2f58-b1b6-4ac1-87de-5480c97a88fd" name="Changes" comment="Проект диплома новостей - readme">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
@@ -144,7 +144,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733055305577</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Проект диплома новостей - readme">
+      <option name="closed" value="true" />
+      <created>1733056561940</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733056561941</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -169,6 +177,7 @@
     <MESSAGE value="Проект диплома новостей" />
     <MESSAGE value="Проект диплома новостей - Readme" />
     <MESSAGE value="Проект диплома новостей - Добавление регистрации пользователя и вход" />
-    <option name="LAST_COMMIT_MESSAGE" value="Проект диплома новостей - Добавление регистрации пользователя и вход" />
+    <MESSAGE value="Проект диплома новостей - readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проект диплома новостей - readme" />
   </component>
 </project>
