@@ -15,7 +15,7 @@
 ### 1. Клонирование репозитория
 
 ```bash
-git clone https://github.com/yourusername/news-site.git
+git clone https://github.com/Tweenex21/Diplom_Project
 cd DjangoDiplom
 ```
 
@@ -141,4 +141,4 @@ DjangoDiplom/
 ## Автор
 Артем
 ## Благодарности
-Спасибо за использование этого проекта! Если у вас есть вопросы или предложения, не стесняйтесь создавать issue или pull request.
+Спасибо за использование этого проекта!
