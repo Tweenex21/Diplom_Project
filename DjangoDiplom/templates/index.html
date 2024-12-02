@@ -1,16 +1,23 @@
 {% extends 'base.html' %}
 
+<!-- Переопределение заголовка страницы -->
 {% block title %}Главная страница{% endblock %}
+
+<!-- Добавление дополнительных стилей -->
 {% block extra_css %}
     <style>
        .header {color: #ff8100 !important;}
     </style>
 {% endblock %}
 
+<!-- Основной контент страницы -->
 {% block content %}
+    <!-- Заголовок страницы -->
     <div class="px-4 mb-5 text-center border-bottom">
         <h1 class="display-4 fw-bold text-body-emphasis header">Лента новостей</h1>
     </div>
+
+    <!-- Список новостей -->
     <ul class="news-list mb-4">
         {% for item in page_obj %}
         <li>
@@ -26,9 +33,11 @@
         {% endfor %}
     </ul>
 
-<div class="pagination d-flex justify-content-center">
+    <!-- Пагинация -->
+    <div class="pagination d-flex justify-content-center">
         <nav aria-label="Page navigation">
             <ul class="pagination">
+                <!-- Кнопка "Предыдущая страница" -->
                 {% if page_obj.has_previous %}
                     <li class="page-item">
                         <a class="page-link" href="?page={{ page_obj.previous_page_number }}" aria-label="Previous">
@@ -43,6 +52,7 @@
                     </li>
                 {% endif %}
 
+                <!-- Номера страниц -->
                 {% for page_num in page_obj.paginator.page_range %}
                     {% if page_obj.number == page_num %}
                         <li class="page-item active"><span class="page-link">{{ page_num }}</span></li>
@@ -51,6 +61,7 @@
                     {% endif %}
                 {% endfor %}
 
+                <!-- Кнопка "Следующая страница" -->
                 {% if page_obj.has_next %}
                     <li class="page-item">
                         <a class="page-link" href="?page={{ page_obj.next_page_number }}" aria-label="Next">
@@ -68,4 +79,3 @@
         </nav>
     </div>
 {% endblock %}
-

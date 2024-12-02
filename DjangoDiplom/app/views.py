@@ -6,9 +6,8 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import AuthenticationForm
 from .models import *
 
-# Create your views here.
 
-
+# Представление для регистрации пользователя
 def sign_up(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
@@ -35,6 +34,7 @@ def sign_up(request):
     return render(request, 'registration_page.html', {'form': form})
 
 
+# Представление для входа пользователя
 def user_login(request):
     if request.method == 'POST':
         form = AuthenticationForm(request, data=request.POST)
@@ -50,6 +50,7 @@ def user_login(request):
     return render(request, 'login.html', {'form': form})
 
 
+# Представление для главной страницы с новостями
 def index(request):
     news = News.objects.all()
     paginator = Paginator(news, 4)  # Показывать 4 новостей на странице
@@ -61,6 +62,7 @@ def index(request):
     return render(request, 'index.html', context)
 
 
+# Представление для детальной страницы новости
 def news(request, id):
     news = News.objects.get(id=id)
     context = {
@@ -69,6 +71,7 @@ def news(request, id):
     return render(request, 'news.html', context)
 
 
+# Представление для страницы с новостями по тегу
 def tags(request, slug):
     tag = get_object_or_404(Tag, slug=slug)
     newsQuerySet = News.objects.filter(tags__in=[tag])
@@ -82,6 +85,7 @@ def tags(request, slug):
     return render(request, 'tags.html', context)
 
 
+# Представление для страницы поиска новостей
 def search(request):
     q = request.GET.get('q')
     newsQuerySet = News.objects.filter(text__icontains=q)
@@ -95,6 +99,7 @@ def search(request):
     return render(request, 'search.html', context)
 
 
+# Представление для страницы контактов
 def contact(request):
     context = {
         'phone': 'phone',

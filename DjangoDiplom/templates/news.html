@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
+<!-- Переопределение заголовка страницы -->
 {% block title %}{{ news.title }}{% endblock %}
 
+<!-- Добавление дополнительных стилей -->
 {% block extra_css %}
     <style>
         body {
@@ -16,7 +18,9 @@
     </style>
 {% endblock %}
 
+<!-- Основной контент страницы -->
 {% block content %}
+    <!-- Навигационная цепочка -->
     <nav>
         <ul class="breadcrumb">
             <li class="breadcrumb-item"><a href="/">Главная</a></li>
@@ -24,11 +28,22 @@
         </ul>
     </nav>
 
+    <!-- Заголовок новости -->
     <h1>{{ news.title }}</h1>
+
+    <!-- Автор новости -->
     <p>{{ news.author }}</p>
+
+    <!-- Краткое описание новости -->
     <p>{{ news.short_text }}</p>
+
+    <!-- Изображение новости -->
     <img src="{{ news.image.url }}" class="img-thumbnail mb-3" style="max-width:50%">
+
+    <!-- Полный текст новости -->
     <div class="text mb-3">{{ news.text }}</div>
+
+    <!-- Теги новости -->
     <p>
     {% for tag in news.tags.all %}
         <a href="/tags/{{ tag.slug }}"><span class="badge text-bg-light">{{ tag.name }}</span></a>

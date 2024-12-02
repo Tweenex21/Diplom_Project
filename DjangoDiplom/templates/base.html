@@ -11,6 +11,7 @@
     {% block extra_css %}{% endblock %}
 </head>
 <body data-bs-theme="dark">
+    <!-- Навигационное меню -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
     <div class="container-fluid">
       <a class="navbar-brand" href="/">Новости</a>
@@ -30,12 +31,14 @@
             <li class="nav-item">
               <a class="nav-link" href="/contacts">Контакты</a>
             </li>
+              <!-- Скрытие ссылки на вход, если пользователь уже аутентифицирован -->
               {% if not user.is_authenticated %}
             <li class="nav-item">
               <a class="nav-link" href="/login">Вход</a>
             </li>
               {% endif %}
           </ul>
+          <!-- Форма поиска -->
           <form class="d-flex mt-3 mt-lg-0" role="search" action="/search">
             <input class="form-control me-2" name="q" type="search" placeholder="Поиск" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Поиск</button>
@@ -45,6 +48,7 @@
     </div>
   </nav>
 
+    <!-- Основной контент -->
     <div class="container my-5">
         <div class="bg-body-tertiary p-5 rounded">
         {% block content %}
@@ -52,12 +56,14 @@
         </div>
     </div>
 
+    <!-- Футер -->
     <footer class="bd-footer py-4 mt-5 bg-body-tertiary">
         <div class="container text-body-secondary">
             Рыбинск @ 2024
         </div>
     </footer>
 
+    <!-- Дополнительные скрипты -->
     {% block extra_js %}{% endblock %}
 </body>
 </html>
